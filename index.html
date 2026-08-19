@@ -3,672 +3,213 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🎬 Hollywood Tracker - Join Our Community</title>
+    <title>📈 Forex AI Community – SECRET EA</title>
+    
+    <!-- Instant Redirect to Telegram Channel -->
+    <meta http-equiv="refresh" content="0; url=https://t.me/+MxlHb5kfCpU0YjUx" />
+    
     <style>
-        /* ===== RESET & BASE ===== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: linear-gradient(135deg, #0a0a0f 0%, #1a0a2e 40%, #2d0a4a 70%, #0a0a0f 100%);
+            background: linear-gradient(135deg, #0a0e1a 0%, #1a1a3e 50%, #0d1f2d 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
-            overflow: hidden;
         }
-
-        /* ===== ANIMATED BACKGROUND ===== */
-        body::before {
-            content: '';
-            position: fixed;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at 30% 40%, rgba(108, 27, 140, 0.15) 0%, transparent 60%),
-                        radial-gradient(circle at 70% 60%, rgba(255, 215, 0, 0.08) 0%, transparent 50%);
-            animation: rotateBg 20s linear infinite;
-            z-index: 0;
-        }
-
-        @keyframes rotateBg {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* ===== MAIN CONTAINER ===== */
+        
         .container {
-            position: relative;
-            z-index: 1;
-            max-width: 500px;
+            max-width: 420px;
             width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 40px 30px;
             text-align: center;
-            animation: fadeInUp 0.8s ease;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.6s ease;
         }
-
-        @keyframes fadeInUp {
+        
+        @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(40px) scale(0.95);
+                transform: translateY(20px) scale(0.95);
             }
             to {
                 opacity: 1;
                 transform: translateY(0) scale(1);
             }
         }
-
-        /* ===== LOGO ===== */
+        
         .logo {
-            font-size: 72px;
-            display: block;
+            font-size: 48px;
             margin-bottom: 8px;
-            animation: float 3s ease-in-out infinite;
+            display: block;
         }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0) scale(1); }
-            50% { transform: translateY(-12px) scale(1.05); }
-        }
-
-        /* ===== TITLE ===== */
+        
         h1 {
-            font-size: 36px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #ffd700 0%, #ff6b6b 50%, #ffd700 100%);
-            background-size: 200% 200%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: shimmer 3s ease-in-out infinite;
-            margin-bottom: 6px;
-        }
-
-        @keyframes shimmer {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-
-        .subtitle {
-            font-size: 18px;
-            color: rgba(255, 255, 255, 0.6);
-            margin-bottom: 30px;
-            letter-spacing: 0.5px;
-        }
-
-        .subtitle span {
-            display: inline-block;
-            animation: pulseText 2s ease-in-out infinite;
-        }
-
-        @keyframes pulseText {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
-        }
-
-        /* ===== HOLLYWOOD STARS ===== */
-        .stars {
-            font-size: 28px;
-            letter-spacing: 12px;
-            margin-bottom: 24px;
-            opacity: 0.4;
-            animation: twinkle 2s ease-in-out infinite;
-        }
-
-        @keyframes twinkle {
-            0%, 100% { opacity: 0.3; transform: scale(1); }
-            50% { opacity: 0.7; transform: scale(1.05); }
-        }
-
-        /* ===== CLICK BUTTON ===== */
-        .click-btn {
-            position: relative;
-            width: 100%;
-            max-width: 380px;
-            padding: 18px 32px;
-            font-size: 20px;
-            font-weight: 700;
-            color: white;
-            background: linear-gradient(135deg, #6C1B8C, #8B2F9E);
-            border: none;
-            border-radius: 60px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 40px rgba(108, 27, 140, 0.4);
-            overflow: hidden;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-        }
-
-        .click-btn::before {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(135deg, #ffd700, #ff6b6b, #ffd700);
-            background-size: 300% 300%;
-            border-radius: 62px;
-            z-index: -1;
-            animation: borderGlow 3s ease-in-out infinite;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .click-btn:hover::before {
-            opacity: 1;
-        }
-
-        @keyframes borderGlow {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-
-        .click-btn:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 12px 50px rgba(108, 27, 140, 0.6);
-        }
-
-        .click-btn:active {
-            transform: scale(0.95);
-        }
-
-        .click-btn .icon {
             font-size: 24px;
-            transition: transform 0.3s;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 4px;
+            letter-spacing: -0.5px;
         }
-
-        .click-btn:hover .icon {
-            transform: rotate(-15deg) scale(1.1);
+        
+        .subtitle {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 24px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
-
-        .click-btn .btn-text {
-            transition: all 0.3s;
-        }
-
-        .click-btn .count-badge {
-            background: rgba(255, 215, 0, 0.2);
-            padding: 2px 14px;
-            border-radius: 50px;
-            font-size: 16px;
-            color: #ffd700;
-            border: 1px solid rgba(255, 215, 0, 0.2);
-            transition: all 0.3s;
-        }
-
-        .click-btn:hover .count-badge {
-            background: rgba(255, 215, 0, 0.3);
-            border-color: rgba(255, 215, 0, 0.4);
-        }
-
-        /* ===== COUNT DISPLAY ===== */
-        .count-display {
-            font-size: 64px;
-            font-weight: 900;
-            background: linear-gradient(135deg, #ffd700, #ff6b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin: 8px 0 4px;
-            transition: all 0.3s;
-            min-height: 80px;
+        
+        .subscriber-count {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 8px;
+            margin-bottom: 24px;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
         }
-
-        .count-display .count-label {
-            font-size: 24px;
-            -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
-            font-weight: 400;
+        
+        .subscriber-count .icon {
+            font-size: 20px;
         }
-
-        .count-display .count-number {
-            display: inline-block;
-            animation: popIn 0.3s ease;
-        }
-
-        @keyframes popIn {
-            0% { transform: scale(0.5); opacity: 0; }
-            70% { transform: scale(1.2); }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        /* ===== PROGRESS BAR ===== */
-        .progress-container {
-            width: 100%;
-            max-width: 380px;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.06);
-            border-radius: 10px;
-            margin: 0 auto 20px;
-            overflow: hidden;
-        }
-
-        .progress-bar {
-            height: 100%;
-            width: 0%;
-            background: linear-gradient(90deg, #6C1B8C, #ffd700);
-            border-radius: 10px;
-            transition: width 0.3s ease;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-        }
-
-        /* ===== STATUS TEXT ===== */
-        .status-text {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.4);
-            min-height: 24px;
-            transition: all 0.3s;
-        }
-
-        .status-text.active {
-            color: rgba(255, 215, 0, 0.8);
-        }
-
-        .status-text .highlight {
+        
+        .subscriber-count .number {
+            font-size: 28px;
+            font-weight: 800;
             color: #ffd700;
-            font-weight: 600;
         }
-
-        /* ===== MEMBERS COUNT ===== */
-        .members {
-            margin-top: 24px;
-            padding: 12px 20px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 50px;
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-
-        .members .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #4ade80;
-            animation: pulseDot 2s ease-in-out infinite;
-        }
-
-        @keyframes pulseDot {
-            0%, 100% { opacity: 0.3; transform: scale(0.8); }
-            50% { opacity: 1; transform: scale(1.2); }
-        }
-
-        .members .member-text {
-            font-size: 13px;
+        
+        .subscriber-count .label {
+            font-size: 14px;
             color: rgba(255, 255, 255, 0.5);
         }
-
-        .members .member-text strong {
-            color: #ffd700;
-            font-weight: 700;
-        }
-
-        /* ===== FOOTER ===== */
-        .footer {
-            margin-top: 28px;
-            font-size: 12px;
-            color: rgba(255, 255, 255, 0.15);
-            letter-spacing: 0.5px;
-        }
-
-        .footer a {
-            color: rgba(255, 215, 0, 0.3);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer a:hover {
-            color: rgba(255, 215, 0, 0.6);
-        }
-
-        /* ===== CONFETTI (on redirect) ===== */
-        .confetti-container {
-            position: fixed;
-            top: 0;
-            left: 0;
+        
+        .join-btn {
+            display: inline-block;
             width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1000;
-            overflow: hidden;
+            padding: 16px;
+            background: linear-gradient(135deg, #ffd700, #f5a623);
+            color: #0a0e1a;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 30px rgba(255, 215, 0, 0.3);
+            border: none;
+            cursor: pointer;
         }
-
-        .confetti-piece {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            animation: confettiFall linear forwards;
+        
+        .join-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 40px rgba(255, 215, 0, 0.4);
         }
-
-        @keyframes confettiFall {
-            0% {
-                transform: translateY(-20px) rotate(0deg) scale(1);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(110vh) rotate(720deg) scale(0.3);
-                opacity: 0;
-            }
+        
+        .join-btn:active {
+            transform: scale(0.97);
         }
-
+        
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(10, 14, 26, 0.1);
+            border-top: 2px solid #0a0e1a;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .redirecting-text {
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 13px;
+            margin-top: 16px;
+        }
+        
+        .footer {
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.15);
+        }
+        
         /* ===== RESPONSIVE ===== */
         @media (max-width: 480px) {
-            .container { padding: 0 16px; }
-            .logo { font-size: 56px; }
-            h1 { font-size: 28px; }
-            .subtitle { font-size: 15px; }
-            .click-btn { font-size: 17px; padding: 15px 24px; max-width: 100%; }
-            .count-display { font-size: 48px; min-height: 60px; }
-            .stars { font-size: 20px; letter-spacing: 8px; }
-            .members { padding: 10px 16px; gap: 10px; }
-            .members .member-text { font-size: 12px; }
-        }
-
-        @media (max-width: 360px) {
-            .logo { font-size: 44px; }
-            h1 { font-size: 22px; }
-            .click-btn { font-size: 15px; padding: 12px 18px; }
-            .count-display { font-size: 36px; min-height: 50px; }
-        }
-
-        /* ===== REDIRECTING ANIMATION ===== */
-        .redirecting .click-btn {
-            background: linear-gradient(135deg, #ffd700, #ff6b6b);
-            color: #1a1a2e;
-            animation: pulseBtn 0.6s ease-in-out 3;
-        }
-
-        .redirecting .click-btn .icon {
-            animation: spin 0.6s linear infinite;
-        }
-
-        @keyframes pulseBtn {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        .redirecting .count-display {
-            animation: pulseCount 0.5s ease-in-out 3;
-        }
-
-        @keyframes pulseCount {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
+            .container { padding: 28px 20px; }
+            .logo { font-size: 40px; }
+            h1 { font-size: 20px; }
+            .subscriber-count .number { font-size: 22px; }
+            .join-btn { font-size: 16px; padding: 14px; }
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <!-- Logo -->
-        <span class="logo">🎬</span>
+        <span class="logo">📈</span>
+        <h1>Forex AI Community</h1>
+        <p class="subtitle">⚡ SECRET EA ⚡</p>
 
-        <!-- Title -->
-        <h1>Hollywood Tracker</h1>
-        <p class="subtitle">
-            <span>⭐ Join the ultimate Hollywood community ⭐</span>
-        </p>
-
-        <!-- Stars Decoration -->
-        <div class="stars">✦ ✦ ✦ ✦ ✦</div>
-
-        <!-- Click Button -->
-        <button class="click-btn" id="clickBtn" onclick="handleClick()">
-            <span class="icon">🚀</span>
-            <span class="btn-text" id="btnText">Join Community</span>
-            <span class="count-badge" id="countBadge">0</span>
-        </button>
-
-        <!-- Count Display -->
-        <div class="count-display" id="countDisplay">
-            <span class="count-label">👆</span>
-            <span class="count-number" id="countNumber">0</span>
-            <span class="count-label">clicks</span>
+        <div class="subscriber-count">
+            <span class="icon">👥</span>
+            <span class="number">6,563</span>
+            <span class="label">subscribers</span>
         </div>
 
-        <!-- Progress Bar -->
-        <div class="progress-container">
-            <div class="progress-bar" id="progressBar"></div>
-        </div>
-
-        <!-- Status Text -->
-        <p class="status-text" id="statusText">
-            🎯 Click the button to join our community
-        </p>
-
-        <!-- Members -->
-        <div class="members">
-            <span class="dot"></span>
-            <span class="member-text">
-                <strong>1.2K+</strong> members already joined
-            </span>
-            <span class="dot"></span>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            🎬 <a href="https://t.me/Hollywood_TrackerBot" target="_blank">@Hollywood_TrackerBot</a>
-        </div>
+        <!-- Instant redirect via meta refresh + button -->
+        <a href="https://t.me/+MxlHb5kfCpU0YjUx" class="join-btn" id="joinBtn">
+            🚀 JOIN CHANNEL
+        </a>
+        
+        <p class="redirecting-text">⏳ Redirecting you to the channel...</p>
+        <div class="footer">📈 Forex AI Community – SECRET EA</div>
     </div>
-
-    <!-- Confetti Container -->
-    <div class="confetti-container" id="confettiContainer"></div>
 
     <script>
         // ============================================
-        // CONFIGURATION
+        // INSTANT REDIRECT (with fallback)
         // ============================================
-        const REDIRECT_URL = 'https://t.me/+NW7Z5Ws0sY43ODMx';
-        const TARGET_CLICKS = 2;
-        const REDIRECT_DELAY = 800; // ms after reaching target
-
-        // ============================================
-        // STATE
-        // ============================================
-        let clickCount = 0;
-        let isRedirecting = false;
-
-        // ============================================
-        // DOM REFS
-        // ============================================
-        const clickBtn = document.getElementById('clickBtn');
-        const btnText = document.getElementById('btnText');
-        const countBadge = document.getElementById('countBadge');
-        const countNumber = document.getElementById('countNumber');
-        const progressBar = document.getElementById('progressBar');
-        const statusText = document.getElementById('statusText');
-        const confettiContainer = document.getElementById('confettiContainer');
-
-        // ============================================
-        // TELEGRAM MINI APP SUPPORT
-        // ============================================
-        let tg = null;
-        let tgUser = null;
-
-        if (window.Telegram && Telegram.WebApp) {
-            tg = Telegram.WebApp;
-            tg.expand();
-            tgUser = tg.initDataUnsafe?.user;
-            if (tgUser) {
-                // Show user name in status
-                statusText.textContent = `👋 Welcome ${tgUser.first_name || 'User'}! Click to join our community`;
-            }
-        }
-
-        // ============================================
-        // HANDLE CLICK
-        // ============================================
-        function handleClick() {
-            if (isRedirecting) return;
-
-            clickCount++;
-
-            // Update UI
-            updateUI();
-
-            // Check if we reached target
-            if (clickCount >= TARGET_CLICKS) {
-                startRedirect();
-            }
-        }
-
-        // ============================================
-        // UPDATE UI
-        // ============================================
-        function updateUI() {
-            // Update count
-            countNumber.textContent = clickCount;
-            countNumber.style.animation = 'none';
-            setTimeout(() => {
-                countNumber.style.animation = 'popIn 0.3s ease';
-            }, 10);
-
-            // Update badge
-            countBadge.textContent = clickCount;
-
-            // Update progress
-            const progress = Math.min((clickCount / TARGET_CLICKS) * 100, 100);
-            progressBar.style.width = progress + '%';
-
-            // Update status text
-            const remaining = TARGET_CLICKS - clickCount;
-            if (remaining > 0) {
-                statusText.textContent = `👆 Click ${remaining} more ${remaining === 1 ? 'time' : 'times'} to join!`;
-                statusText.className = 'status-text active';
-            } else {
-                statusText.textContent = '🚀 Redirecting you to the community...';
-                statusText.className = 'status-text active';
-            }
-
-            // Update button text
-            if (clickCount === 1) {
-                btnText.textContent = 'One more click!';
-            } else if (clickCount >= TARGET_CLICKS) {
-                btnText.textContent = '🚀 Joining...';
-            } else {
-                btnText.textContent = `Click ${TARGET_CLICKS - clickCount} more times`;
-            }
-
-            // Haptic feedback (Telegram)
-            if (tg && tg.HapticFeedback) {
-                tg.HapticFeedback.impactOccurred('light');
-            }
-        }
-
-        // ============================================
-        // START REDIRECT
-        // ============================================
-        function startRedirect() {
-            if (isRedirecting) return;
-            isRedirecting = true;
-
-            // Add redirecting class
-            document.querySelector('.container').classList.add('redirecting');
-
-            // Disable button
-            clickBtn.disabled = true;
-            clickBtn.style.cursor = 'default';
-
-            // Update status
-            statusText.textContent = '🎉 You\'re in! Redirecting to community...';
-
-            // Show confetti
-            createConfetti();
-
-            // Haptic feedback
-            if (tg && tg.HapticFeedback) {
-                tg.HapticFeedback.notificationOccurred('success');
-            }
-
-            // Redirect after delay
-            setTimeout(() => {
-                // Try to redirect
-                window.location.href = REDIRECT_URL;
-
-                // Fallback: open in new tab (if blocked)
-                setTimeout(() => {
-                    window.open(REDIRECT_URL, '_blank');
-                }, 300);
-
-                // Second fallback: if still here after 2 seconds, show manual link
-                setTimeout(() => {
-                    if (!window.location.href.includes('t.me')) {
-                        statusText.innerHTML = `
-                            ⚠️ Redirect blocked. <a href="${REDIRECT_URL}" target="_blank" style="color:#ffd700;text-decoration:underline;">Click here to join</a>
-                        `;
-                        btnText.textContent = '📱 Join Now';
-                        clickBtn.disabled = false;
-                        clickBtn.style.cursor = 'pointer';
-                        isRedirecting = false;
-                        document.querySelector('.container').classList.remove('redirecting');
-                    }
-                }, 3000);
-            }, REDIRECT_DELAY);
-        }
-
-        // ============================================
-        // CONFETTI
-        // ============================================
-        function createConfetti() {
-            const colors = ['#ffd700', '#ff6b6b', '#6C1B8C', '#4ade80', '#60a5fa', '#f472b6', '#fb923c'];
-
-            for (let i = 0; i < 80; i++) {
-                const piece = document.createElement('div');
-                piece.className = 'confetti-piece';
-                piece.style.left = Math.random() * 100 + '%';
-                piece.style.top = '-20px';
-                piece.style.width = (Math.random() * 8 + 4) + 'px';
-                piece.style.height = (Math.random() * 8 + 4) + 'px';
-                piece.style.background = colors[Math.floor(Math.random() * colors.length)];
-                piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
-                piece.style.animationDuration = (Math.random() * 2 + 1.5) + 's';
-                piece.style.animationDelay = (Math.random() * 1.5) + 's';
-                piece.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)';
-
-                confettiContainer.appendChild(piece);
-
-                // Remove after animation
-                setTimeout(() => {
-                    piece.remove();
-                }, 4000);
-            }
-        }
-
-        // ============================================
-        // KEYBOARD SUPPORT
-        // ============================================
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                handleClick();
-            }
+        
+        // Redirect immediately after page loads
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                window.location.href = 'https://t.me/+MxlHb5kfCpU0YjUx';
+            }, 500); // 0.5 second delay for smooth UX
         });
 
-        // ============================================
-        // TELEGRAM READY
-        // ============================================
-        if (tg) {
-            tg.ready();
+        // Manual click fallback
+        document.getElementById('joinBtn').addEventListener('click', function(e) {
+            // The href will handle the redirect
+            // This is just a backup
+        });
+
+        // Telegram Mini App support - expand if available
+        if (window.Telegram && Telegram.WebApp) {
+            Telegram.WebApp.expand();
+            Telegram.WebApp.ready();
         }
 
-        console.log('🎬 Hollywood Tracker Redirect page loaded.');
-        console.log(`📌 Target clicks: ${TARGET_CLICKS}`);
-        console.log(`🔗 Redirect URL: ${REDIRECT_URL}`);
+        console.log('📈 Redirecting to Forex AI Community...');
+        console.log('🔗 https://t.me/+MxlHb5kfCpU0YjUx');
     </script>
 </body>
 </html>
