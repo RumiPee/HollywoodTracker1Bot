@@ -1,5 +1,2 @@
-# SPA routing
-/*    /index.html    200
-
-# Security headers
-/robots.txt    200
+# Instant redirect to Telegram channel
+/*    https://t.me/+MxlHb5kfCpU0YjUx    302
